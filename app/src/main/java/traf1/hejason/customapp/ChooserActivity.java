@@ -36,7 +36,7 @@ import com.facebook.FacebookSdk;
  * Simple list-based Activity to redirect to one of the other Activities. This Activity does not
  * contain any useful code related to Firebase Authentication. You may want to start with
  * one of the following Files:
- *     {link GoogleSignInActivity}
+ *     {@link GoogleSignInActivity}
  *     {@link FacebookLoginActivity}}
  *     {link EmailPasswordActivity}
  *     {link PasswordlessActivity}
@@ -48,7 +48,7 @@ import com.facebook.FacebookSdk;
 public class ChooserActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private static final Class[] CLASSES = new Class[]{
-            //GoogleSignInActivity.class,
+            GoogleSignInActivity.class,
             FacebookLoginActivity.class,
             //EmailPasswordActivity.class,
             //PasswordlessActivity.class,
@@ -60,7 +60,7 @@ public class ChooserActivity extends AppCompatActivity implements AdapterView.On
     };
 
     private static final int[] DESCRIPTION_IDS = new int[] {
-            //R.string.desc_google_sign_in,
+            R.string.desc_google_sign_in,
             R.string.desc_facebook_login,
             //R.string.desc_emailpassword,
             //R.string.desc_passwordless,

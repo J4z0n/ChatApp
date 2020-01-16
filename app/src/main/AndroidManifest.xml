@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".GoogleSignInActivity"
+            android:label="@string/label_google_sign_in" />
+        <activity
             android:name=".FacebookLoginActivity"
             android:label="@string/label_facebook_login" />
         <meta-data
