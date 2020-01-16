@@ -42,7 +42,7 @@ import com.facebook.FacebookSdk;
  *     {link PasswordlessActivity}
  *     {link PhoneAuthActivity}
  *     {link AnonymousAuthActivity}
- *     {link CustomAuthActivity}
+ *     {@link CustomAuthActivity}
  *     {link GenericIdpActivity}
  */
 public class ChooserActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
@@ -55,7 +55,7 @@ public class ChooserActivity extends AppCompatActivity implements AdapterView.On
             //PhoneAuthActivity.class,
             //AnonymousAuthActivity.class,
             //FirebaseUIActivity.class,
-            //CustomAuthActivity.class,
+            CustomAuthActivity.class,
             //GenericIdpActivity.class,
     };
 
@@ -67,7 +67,7 @@ public class ChooserActivity extends AppCompatActivity implements AdapterView.On
             //R.string.desc_phone_auth,
             //R.string.desc_anonymous_auth,
             //R.string.desc_firebase_ui,
-            //R.string.desc_custom_auth,
+            R.string.desc_custom_auth,
             //R.string.desc_generic_idp,
     };
 
