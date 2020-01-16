@@ -52,7 +52,7 @@ public class FacebookLoginActivity extends AppCompatActivity implements
         // Views
         mStatusTextView = findViewById(R.id.status);
         mDetailTextView = findViewById(R.id.detail);
-        setProgressBar(R.id.progressBar);
+        //setProgressBar(R.id.progressBar);
         findViewById(R.id.buttonFacebookSignout).setOnClickListener(this);
 
         // [START initialize_auth]
@@ -115,7 +115,7 @@ public class FacebookLoginActivity extends AppCompatActivity implements
     private void handleFacebookAccessToken(AccessToken token) {
         Log.d(TAG, "handleFacebookAccessToken:" + token);
         // [START_EXCLUDE silent]
-        showProgressBar();
+        //showProgressBar();
         // [END_EXCLUDE]
 
         AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
@@ -137,7 +137,7 @@ public class FacebookLoginActivity extends AppCompatActivity implements
                         }
 
                         // [START_EXCLUDE]
-                        hideProgressBar();
+                        //hideProgressBar();
                         // [END_EXCLUDE]
                     }
                 });
@@ -152,7 +152,7 @@ public class FacebookLoginActivity extends AppCompatActivity implements
     }
 
     private void updateUI(FirebaseUser user) {
-        hideProgressBar();
+        //hideProgressBar();
         if (user != null) {
             mStatusTextView.setText(getString(R.string.facebook_status_fmt, user.getDisplayName()));
             mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
